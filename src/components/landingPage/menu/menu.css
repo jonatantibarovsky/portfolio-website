@@ -1,0 +1,39 @@
+.list-container {
+    position: absolute;
+    text-decoration: none;
+}
+
+ul {
+    position: absolute;
+    display: flex;
+    width: 480px;
+    justify-content: space-around;
+    top: 2vh;
+    left: 50%;
+    padding: 0;
+    transform: translate(-50%);
+    list-style: none;
+    text-transform: uppercase;
+    font-family: Aviano Sans;
+}
+
+ul > li {
+    display: inline-block;
+    color: white;
+    cursor: pointer;
+}
+
+
+
+.list-item::after {
+    content: '';
+    display: block;
+    width: 0;
+    height: 2px;
+    background: white;
+    transition: width .3s;
+}
+
+.list-item:hover::after {
+    width: 100%;
+}
